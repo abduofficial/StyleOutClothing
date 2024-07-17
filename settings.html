@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css"> 
+    <title>settings</title>
+</head>
+<body>
+  <section id="header">
+<a href="index.html"><img src="assets/logo.png" width="70" class="logo" alt=""></a>
+
+<header>
+  <ul id="navbar">
+    <li><a class="active" href="index.html">Home</a></li>
+    <li><a href="discounts.html">Shop</a></li>
+    <li><a href="faq.html">About</a></li>
+    <li><a href="signupin.html">Register</a></li>
+    <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+   
+  </ul>
+    
+</header>
+       <br> <input type="text" class = "search_bar" placeholder="search bar">
+  </section>
+
+
+        <div id="container">
+
+          <div class="leftbox">
+            <nav>
+              <a onclick="tabs(0)" class="tab active">
+                <i class="fa fa-user"></i>
+              </a>
+              <a onclick="tabs(1)" class="tab">
+                <i class="fa fa-credit-card"></i>
+              </a>
+              <a onclick="tabs(2)" class="tab">
+                <i class="fa fa-tv"></i>
+              </a>
+              <a onclick="tabs(3)" class="tab">
+                <i class="fa fa-tasks"></i>
+              </a>
+              <a onclick="tabs(4)" class="tab">
+                <i class="fa fa-cog"></i>
+              </a>
+            </nav>
+          </div><div class = "h1"><div class = "h2">
+            <div class = "rightbox">
+              <div class="profile tabShow">
+                <h1 class = "h1">personal Info</h1>
+                <div class ="space"> <h2 class = "h2">Full Name</h2></div>
+                <input type="text" class="input" value="first and last name">
+                <div class = "space"><h2 class = "h2">date of birth</h2></div>
+                <input type="text" class="input" value="dd/mm/yyyy">
+                <div class ="space"><h2 class ="h2">Gender</h2></div>
+                <input type="text" class="input" value="Male">
+                <h2 class = "h2">Email</h2>
+                <input type="text" class="input" value="Example@example.com">
+                <h2 class = "h2">Password</h2>
+                <input type="password" class="input" value="Anything">
+                <button class="btn">Update</button>
+              </div>
+              <div class="Payment tabShow">
+                <h1 class = "h1">Payment Info</h1>
+                <div class ="space1"><h2 class = "h2">Payment method</h2></div>
+                <input type="text" class="input" value = "MasterCard - 0202 **** **** 7368">
+                <div class ="space1"><h2 class ="h2">Billing Address</h2></div>
+                <input type="text" class="input" value="1246 anystreet in a town">
+                <div class ="space1"><h2 class ="h2">Zipcode</h2></div>
+                <input type="password" class="input" value="419911">
+                <div class ="space1"><h2 class = "h2">Billing Date</h2></div>
+                <input type="text" class="input" value="April 20, 2021">
+                <div class ="space1"><h2 class = "h2">Redeem Card</h2></div>
+                <input type="password" class="input" value="Enter Gift code">
+                <button class="btn">Redeem</button>
+              </div>
+              <div class="subscription tabShow">
+                <h1 class = "h1">Subscription Info</h1>
+                <div class ="space2"><h2 class = "h2">Payment Date</h2></div>
+                <p>May 24 , 2019</p>            
+                <div class ="space2"><h2 class = "h2">Next Charges</h2></div>
+                <p>$49.99 <span> includes tax</span></p>
+                <div class ="space2"><h2 class = "h2">Plan</h2></div>
+                <p>Limited Plan</p>
+                <div class ="space2"><h2 class = "h2">Monthly</h2></div>
+                <p>$79.99/month</p>
+                <button class="save-btn">save</button>
+              </div>
+              <div class="privacy tabShow">
+                <h1 class = "h1">Privacy settings</h1>
+                <div class ="space2"></div><h2 class = "h2">Manage Email Noti.</h2>
+                <p></p>            
+                <div class ="space2"></div><h2 class = "h2">Manage Privacy settings</h2>
+                <p></p>
+                <div class ="space2"></div><h2 class = "h2">View Terms Of use</h2>
+                <p></p>
+                <div class ="space2"></div><h2 class = "h2">Personalized Ad Experience</h2>
+                <p></p>
+                <div class ="space2"></div><h2 class = "h2">Protect Account</h2>
+                <button class = "btn2">Update</button>
+              </div>
+              <div class = "privacy tabShow">
+                <h1 class = "h1">Account settings</h1>
+                <h2 class = "h2">Sync Watchlist</h2>
+                <p></p>            
+                <h2 class = "h2">Hold Subscription</h2>
+                <p></p>
+                <h2 class = "h2">Cancel Subscription</h2>
+                <p></p>
+                <h2 class = "h2">your Devices</h2>
+                <p></p>
+                <h2 class = "h2">Referrals</h2>
+                <button class = "btn3">Update</button>
+                
+              </div>
+            </div></div></div>
+        </div>
+            
+        
+        <script src="script.js"></script>
+
+
+        <footer class="section-p1" >
+            <div class="footer-info">
+              <div class="col">
+                <img class="logo" src="assets/logo.png" width="70" alt = "">
+                <h4>contact</h4>
+                <p><strong>Address: </strong>khfihsgdfiye</p>
+                <p><strong>Phone: </strong>667857865</p>
+                <p><strong>Hours: </strong>5675</p>
+                <div class="follow">
+                  <h4>Follow us</h4>
+                  <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col">
+                <h4>About</h4>
+                <a href="cart.html">Delivery information</a>
+                <a href="faq.html">Refund policy</a>
+                <a href="privacy.html">privacy & policy</a>
+            
+              </div>
+            
+              <div class="col">
+                <h4>My Account</h4>
+                <a href="signupin.html">Sign in</a>
+                <a href="cart.html">View cart</a>
+                <a href="cart.html">Track my order</a>
+                <a href="profile.html">My wishlist</a>
+                <a href="faq.html">Help</a>
+            
+              </div>
+            
+              <div class="col install">
+                <h4>Install App</h4>
+                <p>From app store or google play</p>
+                <div class="row">
+                  <img src="assets/app.jpg" alt="">
+                  <img src="assets/play.jpg" alt="">
+                </div>
+                <p>Payment mehthods</p>
+                <img src="assets/pay.png" alt="">
+                
+              </div>
+            </div>
+            <div class="copywrite">
+              <p>© 2023 ,Styleoutclothing </p>
+            </div>
+          </footer>
+    </body>
+</html>

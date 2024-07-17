@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styleout Clothing Register</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/912598d4c6.js" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+
+</head>
+    <body id="login_bg" class="theme">
+    <section id="header">
+<a href="index.html"><img src="assets/logo.png" width="70" class="logo" alt=""></a>
+
+<header>
+  <ul id="navbar">
+    <li><a  href="index.html">Home</a></li>
+    <li><a href="discounts.html">Shop</a></li>
+    <li><a href="faq.html">About</a></li>
+    <li><a class="active"href="signupin.html">Register</a></li>
+    <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+   
+  </ul>
+    
+</header>
+       <br> <input type="text" class = "search_bar" placeholder="search bar">
+  </section>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class ="container">
+        <div class="form-box">
+            <h1 id = "title">Sign up</h1>
+             <div class="btn-field">
+            <button type = "button" id="signup">Sign up</button>
+                <button type = "button" id = "signin" class = "disable" onclick="fun">Sign in</button>
+            </div>
+            <form>
+            <div class = "input-group">
+                <div class = "input-field">
+                <i class="fa-solid fa-user" id = "nameField"></i>
+                <input type = "text" placeholder="Name">
+                       
+                
+                </div>
+                
+                <div class = "input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input type = "email" placeholder="Email">
+                       
+                
+                </div>
+                <div class = "input-field">
+                <i class="fa-solid fa-lock"></i>
+                <input type = "password" placeholder="Password">
+                       
+                
+                </div>
+                <p>Lost password <a href="#">Click Here!</a></p>
+                </div>
+           
+            </form>
+             <div class="btn-field">
+            <button type = "button"> Next</button>
+                
+            </div>
+            </div>
+        </div>
+        
+        
+       <footer class="section-p1" >
+            <div class="footer-info">
+              <div class="col">
+                <img class="logo" src="assets/logo.png" width="70" alt="">
+                <h4>contact</h4>
+                <p><strong>Address: </strong>khfihsgdfiye</p>
+                <p><strong>Phone: </strong>667857865</p>
+                <p><strong>Hours: </strong>5675</p>
+                <div class="follow">
+                  <h4>Follow us</h4>
+                  <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col">
+                <h4>About</h4>
+                <a href="cart.html">Delivery information</a>
+                <a href="faq.html">Refund policy</a>
+                <a href="privacy.html">privacy & policy</a>
+            
+              </div>
+            
+              <div class="col">
+                <h4>My Account</h4>
+                <a href="signupin.html">Sign in</a>
+                <a href="cart.html">View cart</a>
+                <a href="cart.html">Track my order</a>
+                <a href="profile.html">My wishlist</a>
+                <a href="faq.html">Help</a>
+            
+              </div>
+            
+              <div class="col install">
+                <h4>Install App</h4>
+                <p>From app store or google play</p>
+                <div class="row">
+                  <img src="assets/app.jpg" alt="">
+                  <img src="assets/play.jpg" alt="">
+                </div>
+                <p>Payment mehthods</p>
+                <img src="assets/pay.png" alt="">
+                
+              </div>
+            </div>
+            <div class="copywrite">
+              <p>© 2023 ,Styleoutclothing </p>
+            </div>
+          </footer>
+        
+<script>
+  
+      let signup = document.getElementById("signup");
+      let signin = document.getElementById("signin");
+      let nameField = document.getElementById("nameField");
+      let title = document.getElementById("title");
+    
+    signin.onclick = function(){
+        nameField.style.maxHeight= "-2";
+        title.innerHTML = "Sign in";
+        signup.classList.add("disable");
+        signin.classList.remove("disable");
+    }
+    signup.onclick = function(){
+        nameField.style.maxHeight= "60px";
+        title.innerHTML = "Sign up";
+        signup.classList.remove("disable");
+        signin.classList.add("disable");
+    }
+
+
+        </script>
+        
+        
+    </body>
+</html>
